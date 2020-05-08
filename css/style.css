@@ -1,0 +1,778 @@
+/*---------------------BASE STYLES--------------------*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, del, dfn, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+body {
+	background: #031A56 url("../images/code-mobile.jpeg") no-repeat;
+	color: rgb(58, 58, 58);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: .95em;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+}
+h1 {
+	color: white;
+	font-size: 1.2em;
+}
+h2 {
+	color: white;
+	font-size: 2.1em;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 5%;
+}
+h3 {
+	font-family: 'IBM Plex Mono', monospace;
+	color: #031A56;
+	padding:8% 0;
+	text-transform: capitalize;
+	font-size: 1.3em;
+}
+h4 {
+	font-family: 'IBM Plex Mono', monospace;
+	text-transform: capitalize;
+}
+h5 {
+	font-size: 1em;
+	padding: 3% 0%;
+	color:#031A56;
+}
+p {
+	padding-bottom:10px;
+	line-height:140%;
+}
+a:link, a:visited {
+	color:#fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+img, iframe, video {
+	width: 100%;
+}
+.wrapper {
+	width: 90%;
+	margin: auto;
+}
+.icon {
+	width: 30px;
+}
+
+/*MOBILE MENU*/
+.mobile-menu {
+	width: 20%;
+	text-align: right;
+}
+.mobile-menu div {
+	width: 45px;
+	height: 2px;
+	background-color: #fff;
+	margin: 6px auto;
+	transition: 0.5s;
+}
+.change #bar1  {
+	-webkit-transform: rotate(-80deg) translate(-9px, 6px);
+	transform: rotate(-48deg) translate(-6px, 4px);
+ }
+.change #bar2 {
+	opacity: 0;
+}
+.change  #bar3{
+ -webkit-transform: rotate(45deg) translate(-8px, -8px);
+ transform: rotate(47deg) translate(-6px, -7px);
+}
+
+/*APPLY NOW BUTTON*/
+.button {
+	background-color: #E60000;
+	padding: 10px 30px;
+	font-size: 1em;
+	text-align: center;
+	display: block;
+	width: fit-content;
+	margin: 5% auto;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 50px;
+	font-weight: 500;
+}
+
+/*TOP HEADER*/
+#header {
+	position: fixed;
+	width: 100%;
+	background-color: #031A56;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-box-shadow: 0px 12px 15px -1px rgba(0, 0, 0, 0.509);
+	-moz-box-shadow: 0px 12px 15px -1px rgba(0, 0, 0, 0.486);
+	box-shadow: 0px 12px 15px -1px rgba(0, 0, 0, 0.466);
+}
+#logo {
+	display: flex;
+	align-items: center;
+	height: 80px;
+	margin-left: 3%;
+	width: 70%;
+}
+#header a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#logo img {
+	margin-right:3%;
+} 
+
+/*NAV*/
+nav {
+	display: none;
+	flex-basis: 100%;
+	color: white;
+	background-color: #031A56;
+	font-size: 1.15em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+nav ul {
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	-webkit-box-shadow: inset 0px 15px 9px -10px rgba(0, 0, 0, 0.776);
+	-moz-box-shadow: inset 0px 15px 9px -10px rgba(0, 0, 0, 0.776);
+	box-shadow: inset 0px 15px 9px -10px rgba(0, 0, 0, 0.776);
+}
+nav a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	transition: color ease-in .5s;
+}
+nav a:hover, nav a:focus{
+	color:rgb(87, 193, 255);
+}
+nav li {	
+	text-align: right;
+	border-bottom: 1px solid rgb(255, 0, 0);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-grow: 1;
+}
+
+/*MAIN*/
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 95px 0px 15% 0px;
+}
+main header {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+main > header > p {
+	margin: auto;
+	letter-spacing: 1.4px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 50px;
+	letter-spacing: 1vw;
+	font-weight: 100;
+}
+main section, main article {
+	margin-top: 6%;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 5px;
+	padding: 0 5% 5% 5%;
+}
+main section {
+	background-color: #fff;
+}
+.share-link {
+	width: 35px;
+	margin-left: 85%;
+}
+
+/*TABLES*/
+table {
+	margin: auto;
+	width: 100%;
+	text-align: left;
+	background-color: white;
+	border-collapse: collapse;
+}
+table a:link, table a:visited {
+	color: rgb(30, 0, 72);
+	border-bottom: 1px solid rgb(61, 61, 61);
+	font-weight: bold;
+}
+table th {
+	background-color: rgb(17, 0, 92);
+	color: rgb(255, 255, 255);
+}
+table td {
+	border: 1px solid rgb(189, 189, 189);
+	padding: 10px 5px;
+}
+
+/*-------------------HOMEPAGE--------------------*/
+/*LINKS TO OTHER PAGES*/
+.webpage-link img{
+	display: block;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+}
+.webpage-link {
+	padding: 0%;
+}
+.webpage-link h3 {
+	padding: 0% 10% 10% 10%;
+}
+/*PLUS ICON*/
+.plus {
+	background-color: #031A56;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	border-radius: 5px;
+}
+.plus .icon{
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+}
+/*APPLY & WORK EXP exp*/
+.apply, .work-exp {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.apply a.fetchcourse, .work-exp a {
+	color: rgb(54, 54, 54);
+	border-bottom: 1px solid rgb(61, 61, 61);
+	font-weight: bold;
+	width: 100%;
+}
+/*COURSE INFO*/
+.course-info, .work-exp{
+	padding-top: 5%;
+}
+/*WORK EXP SEC*/
+.work-exp h4 {
+	padding-bottom: 5%;
+}
+
+/*----------------COURSE CONTENT PAGE--------------*/
+/*COURSE TABLE*/
+.course-table th{
+	padding: 8% 2%;
+}
+/*DESCRIPTION*/
+.course-description li {
+	padding:3% 0;
+}
+.course-description img{
+	padding:3% 0;
+}
+/*SYLLABUS SEC*/
+.course-syllabus {
+	padding-top: 3%;
+}
+.course-syllabus li{
+	padding-bottom: 5%;
+}
+/*ENTRY REQ*/
+.entry-requirements {
+	padding-top: 4%;
+}
+.entry-requirements span {
+	font-weight: 600;
+	padding: 3% 0%;
+	display: block;
+	text-transform: uppercase;
+}
+/*ADDITIONAL INFO SEC*/
+.additional-info {
+	color: rgb(58, 58, 58);
+}
+.additional-info a:link, .additional-info a:visited {
+	color: rgb(30, 0, 72);
+	border-bottom: 1px solid rgb(61, 61, 61);
+	font-weight: bold;
+}
+/*ACCORDION*/
+/*(ADDITIONAL INFO SEC & RESOURCES SEC)*/
+.heading {
+	min-height: 60px;
+	display: flex;
+	border-bottom: 3px solid orange;
+	justify-content: space-between;
+	padding: 0 5%;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(45, 0, 97);
+}
+.heading:hover {
+	min-height: 60px;
+	background-color: rgb(255, 157, 0);
+	border-bottom: 3px solid rgb(0, 10, 102);
+	color: rgb(0, 10, 102);
+
+}
+.content {
+	padding: 4%;
+	display: none;
+	text-align: left;
+}
+.content li {
+	margin-left: 4%;
+}
+
+/*----------------RESOURCES & STUDENT WORK PAGE--------------*/
+#resources-studentwork > section {
+	margin-top: 5%;
+	background-color: transparent;
+}
+#resources-studentwork section a:link,
+#resources-studentwork section a:visited {
+	color: rgb(44, 44, 44);
+	border-bottom: 1px solid grey;
+}
+#resources-studentwork li {
+	padding-bottom: 4%;
+	list-style-type: square;
+}
+#resources-studentwork h3 {
+	color: #fff;
+	margin: auto;
+	text-align: center;
+}
+#resources-studentwork section {
+	margin: auto;
+	padding: 0;
+}
+#resources-studentwork header > p {
+	color: #fff;
+}
+.resources > header, .student-work > header {
+	align-items: center;
+	margin: 10% auto;
+	padding-bottom: 3%;
+}
+.resources > header p, .student-work > header p {
+	text-align: center;
+	margin: auto;
+}
+#resources-studentwork .apply {
+	border: none;
+}
+/*STUDENT WORK*/
+#resources-studentwork .student-work h4 {
+	font-size: 1.5em;
+	padding: 5%;
+}
+.student-work a:link, .student-work a:visited {
+	font-weight: 400;
+	border-bottom: 1px solid rgb(44, 44, 44);
+	color: rgb(44, 44, 44);
+	margin-bottom: 3%;
+}
+#resources-studentwork .student-work section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3%;
+	justify-content: space-evenly;
+}
+
+/*----------------CONTACT PAGE--------------*/
+#contact span {
+	font-weight: 600;
+	font-family:  'IBM Plex Mono', monospace;
+}
+/*DETAILS SEC*/
+.contact-details {
+	padding-top:5%;
+}
+.contact-details a {
+	color:rgb(58, 58, 58);
+	border-bottom: 1px solid rgb(58, 58, 58);
+}
+/*CONTACT FORM SEC*/
+#contact-form label {
+	display: block;
+	padding: 2% 0;
+	text-align: left;
+	font-family:  'IBM Plex Mono', monospace;
+	color: rgb(246, 246, 246);
+	background-color: navy;
+	padding-left: 10px;
+}
+#contact-form input, #contact-form textarea {
+	color: navy;
+	width: 100%;
+	font-size: 1.3em;
+	border:none;
+	padding: 2%;
+	border: 1px solid navy;
+	box-sizing: border-box;
+}
+#contact-form input[type="submit"] {
+	border-radius: 50px;
+	color: navy;
+	border: #031A56 2px solid;
+	background-color: transparent;
+}
+#contact-form input[type="submit"]:hover {
+	color: rgb(255, 255, 255);
+	border: rgb(255, 255, 255) 2px solid;
+	background-color: navy;
+}
+/*FACEBOOK LINK PARAGRAPH*/
+.facebook-link {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.facebook-link img{
+	width: 30px;
+	padding-right: 8px;
+}
+/*TRANPORT SEC*/
+.transport {
+	padding-top: 2%;
+}
+.transport li {
+	text-align: left;
+	padding: 2%;
+	margin-left: 20px;
+	list-style-type: square;
+}
+
+/*-------------------FOOTER-------------------*/
+footer {
+	background-color: #031A56;
+	color: white;
+	padding: 2% 5%;
+	border-top: 5px solid rgb(51, 51, 51);
+}
+footer section{
+	background-color: transparent;
+	margin: 0 auto;
+}
+footer h3 {
+	border-bottom: red 1px solid;
+	color: white;
+	margin-bottom: 9%;
+}
+footer li {
+	padding-bottom: 3%;
+}
+footer a {
+	transition: border-bottom .5s;
+	border-bottom: 1px solid white;
+}
+footer a:hover {
+	border-bottom: 1px solid rgb(255, 94, 0);
+}
+footer .facebook-link {
+	justify-content: flex-start;
+}
+footer span {
+	font-weight: 500;
+}
+footer .copyright{
+	text-align: center;
+	display: block;
+	padding-top: 5%;
+}
+.copyright span {
+	color: rgb(255, 115, 0);
+}
+/*BACK TO TOP*/
+#back-to-top {
+	display: none;
+	background-color: rgb(175, 0, 0);
+	border: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	color: #fff;
+	margin-top: 30px;
+	font-size: 1em;
+	transition: all .5s;
+}
+#back-to-top:hover {
+	background-color: rgb(255, 119, 0);
+	color: rgb(22, 0, 103);
+}
+
+/********************** Media Query ********************/
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+	/*----------------CONTACT PAGE--------------*/
+	#contact h3, #contact p {
+		flex-basis: 100%;
+	}
+	/*LOCATION*/
+	#contact .location {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	img.reception, iframe {
+		display: block;
+		width: 50%;
+	}
+	/*APPLY & TRANSPORT SEC*/
+	#contact > div {
+		justify-content: space-between;
+		display: flex;
+	}
+	#contact .apply, #contact .transport {
+		width: 49.5%;
+	}
+	/*MAP*/
+	iframe {
+		max-height: 150px;
+	}
+}
+  
+/* Desktop */
+@media only screen and (min-width: 990px) {
+	/*----------------BASE STYLES--------------*/
+	body {
+		background-image: url("../images/code-desktop.jpg");
+		font-size: .90em;
+	}
+	h2 {
+		font-size: 3.5em;
+		text-align: left;
+		margin: 0;
+	}
+	h3 {
+		padding:3% 0;
+	}
+	iframe {
+		max-height: 200px;
+	}
+	.wrapper {
+		width:85%;
+	}
+	/*MOBILE MENU*/
+	.mobile-menu {
+		display: none;
+	}
+	/*HEADER*/
+	#header {
+		flex-wrap: nowrap;
+	}
+	header .button {
+		margin-left: 0;
+	}
+	.share-link {
+		order: -1;
+	}
+	/*NAV*/
+	#nav {
+		display: block;
+		font-size: .8em;
+	}
+	nav ul {
+		flex-direction: row;
+		height: 0px;
+	}
+	nav a {
+		height: fit-content;
+	}
+	nav li {
+		text-align: center;
+		border-bottom: none;
+		padding:0 3%;
+		max-width: 23%;
+	}
+	/*MAIN*/
+	main {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	main > header > p {
+		text-align: left;
+		width: 90%;
+		margin: 0;
+		font-size: 1.5vw;
+		letter-spacing: 8px;
+	}
+	main > header {
+		width: 65%;
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+	}
+	main section, main article {
+		margin: 1% 0 0 0;
+		padding:  0 3% 3% 3%;
+	}
+	main article {
+		margin: auto;
+	}
+	/*TABLES*/
+	table {
+		font-size: 1em;
+		width: 100%;
+	}
+	table th {
+		padding: 5px;
+	}
+	/*FOOTER*/
+	#back-to-top {
+		display: block;
+	}
+
+	/*-------------------HOMEPAGE--------------------*/
+	#homepage {
+		align-content:flex-start;
+		justify-content: flex-start;
+	}
+	#homepage section {
+		margin: 1% 0 0 1%;
+	}
+	#homepage header{
+		order: -3;
+		width: 66.5%;
+	}
+	/*COURSE INFO SEC*/
+	.course-info {
+		width: 32.3%;
+		margin: 0;
+		order: -2;
+		padding:2%;
+	}
+	#homepage .apply, #homepage .work-exp, .webpage-link{
+		flex-basis: 32.6%;
+	}
+	/*course content sec*/
+	#homepage .course-content-link {
+		order: -1;
+		margin-left: 0;
+	}
+	#homepage > .resources-link {
+		margin-left: 0;
+	}
+
+	/*----------------COURSE CONTENT PAGE--------------*/
+	/*TABLE*/
+	.course-table {
+		width: 35%;
+		margin-top: 0;
+		padding:2%;
+		font-size: 1em;
+	}
+	/*COURSE DESCRIPTION*/
+	.course-description {
+		width: 49.6%;		
+		padding: 2%;
+	}
+	/*ENTRY REQ SEC*/
+	.entry-requirements {
+		padding-top: 5%;
+	}
+	/*SYLLABUS, ENTRY REQ & WORK EXP SEC*/
+	.course-syllabus {
+		margin-top: 0px;
+	}
+	#course-content .work-exp, .entry-requirements {
+		width: 49.5%;
+	}
+	/*ADDITIONAL INFO ACCORDIAN SEC*/
+	.additional-info {
+		margin-top: 0;
+		padding-top: 2%;
+		margin-top: 2%;
+	}
+	.content img{
+		width: 50%;
+		padding-left: 5%;
+	}
+	/*ADDITIONAL INFO & WORK EXP WRAPPER*/
+	#course-content > div {
+		margin-top: 1%;
+		width: 49.5%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*-------------------RESOURCES & STUDENT WORK--------------------*/
+	/*STUDENT WORK SEC*/
+	#resources-studentwork .student-work {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		flex-direction: row;
+	}	
+	#resources-studentwork .student-work section {
+		flex-basis: 32%;
+	}
+	.student-work > header {
+		flex-basis: 100%;
+	}
+	.resources {
+		width: 100%;
+	}
+	.clean-code .content, .seo .content, .access .content {
+		display: none;
+		justify-content: flex-start;
+	}
+	.resources div > div {
+		 display: flex;
+		 align-items: flex-start;
+	 }
+
+	/*----------------CONTACT PAGE--------------*/
+	#contact section {
+		padding: 3%;
+		margin-top: 1%;
+	}
+	/*DETAILS SEC*/
+	#contact .contact-details {
+		flex-basis: 33%;
+		margin-top: 0;
+	}
+	/*LOCATION SEC & FORM SEC*/
+	#contact .location, #contact-form {
+		flex-basis: 49.5%;
+		margin-top: 1%;
+	}
+	#contact .location img, iframe {
+		width: 100%;
+	}
+
+	/*-------------------FOOTER--------------------*/
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 2%;
+	}
+	.copyright {
+		flex-basis: 100%;
+	}
+	footer section{
+		flex-basis: 45%;
+	}
+
+}
